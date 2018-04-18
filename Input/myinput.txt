@@ -1,0 +1,34 @@
+begin
+
+function math(in real num1, in real num2, in real num3) :integer
+begin
+	real output
+	let output = num1 + num2 - num3
+	print output
+end
+
+math(4.2,4.3,0.4)
+
+function printpositive(in integer numpos) :integer
+begin
+	print "Number is positive"
+end
+
+function printnegative(in integer numneg) :integer
+begin
+	print "Number is negative"
+end
+
+integer numin
+input numin
+if numin > 0
+begin
+	printpositive(numin)
+end
+else
+begin
+	printnegative(numin)
+end
+
+
+end
